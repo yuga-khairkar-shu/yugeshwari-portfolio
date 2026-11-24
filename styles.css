@@ -306,3 +306,14 @@ footer a:hover { color: var(--accent); }
 .skillgrp .label { display: block; margin-bottom: .5rem; }
 
 @media (min-width: 700px) { .proof ul { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.vpair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-self: start; }
+.vpair video { display: block; width: 100%; aspect-ratio: 9 / 16; background: #000; border: 1px solid var(--line); border-radius: var(--r); object-fit: cover; }
+@media (max-width: 860px) { .vpair { max-width: 100%; } }
+.vcol { min-width: 0; }
+.vname { font: 500 var(--fs-label)/1.4 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: .8rem 0 .4rem; }
+.vstats { list-style: none; margin: 0; padding: 0; color: var(--muted); font-size: .92rem; }
+.vstats li { padding: .15rem 0; }
+.vstats b { color: var(--text); font-family: var(--serif, Georgia, serif); font-size: 1.15rem; margin-right: .35rem; }
+.case.vidcase { grid-template-columns: minmax(0, 540px) minmax(0, 1fr); }
+@media (max-width: 860px) { .case.vidcase { grid-template-columns: minmax(0, 1fr); } .vpair { max-width: 420px; } }
